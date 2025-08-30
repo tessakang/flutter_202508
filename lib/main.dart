@@ -13,10 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(),
-        body: Container(
-          width: 100, height: 100,
-          decoration: BoxDecoration(
-            border: Border.all(color: Color.fromARGB(10, 100, 10, 10))
+        body: Align(
+          alignment: Alignment.bottomCenter ,
+          child: Container(
+            width: 100, height: 100,
+            color: Color.fromARGB(100, 10, 10, 10),
           ),
         ),
       )
