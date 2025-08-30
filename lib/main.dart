@@ -12,20 +12,14 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('앱바'),
-          backgroundColor: Color.fromARGB(100, 10, 20, 30),
-        ),
-        body: Text('안녕'),
-        bottomNavigationBar: BottomAppBar(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Icon(Icons.phone),
-              Icon(Icons.message),
-              Icon(Icons.contact_page)
-            ],
-          ),
+        appBar: AppBar(),
+        body: Container(
+          width: 100,
+          height: 100,
+          color: Color.fromARGB(100, 10, 10, 10),
+          margin: EdgeInsets.all(20), // 외부 여백
+          padding: EdgeInsets.all(20), // 내부 여백
+          child: Text('여백 확인용 text'),
         ),
       )
     );
