@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         body: Align(
           alignment: Alignment.bottomCenter ,
           child: Container(
-            width: 100, height: 100,
+            width: double.infinity, height: 100,
             color: Color.fromARGB(100, 10, 10, 10),
           ),
         ),
