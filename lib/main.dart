@@ -16,7 +16,10 @@ class MyApp extends StatelessWidget {
         body: SizedBox(
           child: Text('안녕하세요',
             style: TextStyle(
-              color: Colors.red
+              fontSize: 30,
+              letterSpacing: 10,
+              backgroundColor: Colors.amber,
+              fontWeight: FontWeight.w700
             ),),
         )
         ),
