@@ -13,16 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: Text('앱바'),),
-        body: SizedBox(
-          child: Text('안녕하세요',
-            style: TextStyle(
-              fontSize: 30,
-              letterSpacing: 10,
-              backgroundColor: Colors.amber,
-              fontWeight: FontWeight.w700
-            ),),
+        body: IconButton(
+            onPressed: (){},
+          icon: Icon(Icons.star), style: ButtonStyle(),
         )
-        ),
+      )
     );
   }
 }
