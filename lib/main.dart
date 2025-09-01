@@ -12,52 +12,15 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
         home: Scaffold(
-          appBar: AppBar(title: Container(
-              child: Row(
-                children: [
-                  Text('금도홍 3가', style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                  ),),
-                  Icon(Icons.add, size: 20,)
-                ],
-              )
-          ), actions: [Icon(Icons.saved_search, size: 30,), Icon(Icons.list_outlined, size: 30,), Icon(Icons.add_alert, size: 30,)], backgroundColor: Colors.green,),
+          appBar: AppBar(title: Text('앱바'),),
           body: Container(
-              width: 450, height: 150, color: Colors.black12,
-              padding: EdgeInsets.all(10),
-              child: Row(
+            child: Row(
                 children: [
-                  Image.asset('assets/memory_logo.png', width: 150, height: 150,),
-                  Flexible( flex: 1,
-                    child: Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                        Text('캐논 DSLR 100D(단렌즈, 충전기 16기가SD 포함',
-                          style: TextStyle(
-                            fontWeight: FontWeight.w700,
-                          ),),
-                        Row(
-                          children: [
-                          Text('성동구 행당동'),
-                          Text(' • '),
-                          Text('끌올 10분 전')
-                        ],
-                        ),
-                        Text('210,000원'),
-                        Row(mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                          Icon(Icons.heart_broken),
-                          Text('4')
-                        ],)
-                      ],
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
+                  Flexible(child: Container(color: Colors.blue,), flex: 3),
+                  Flexible(child: Container(color: Colors.green,), flex: 7)
+                ]
+            ) ,
           ),
-    );
-  }
+        ));
+    }
 }
